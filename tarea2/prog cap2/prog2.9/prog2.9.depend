@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1789786795 source:c:\users\jeanc\desktop\tarea\tarea2\prog cap2\prog2.9\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
