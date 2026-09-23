@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1789873302 source:c:\users\jeanc\documents\tareas\tarea2\prog cap3\prog3.3\main.c
+	<stdio.h>
+	<stdlib.h>
+
