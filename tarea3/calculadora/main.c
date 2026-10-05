@@ -224,7 +224,7 @@ int main()
 
             }
 
-            else if (ERR_RaizNegativa)
+            else if (err = ERR_RaizNegativa)
             {
                 printf("\nError");
             }
@@ -318,6 +318,7 @@ int raiz(double radicando, double *r)
     if (radicando >= 0)
     {
         *r = sqrt(radicando);
+        return ERR_OK;
     }
     else
     {
