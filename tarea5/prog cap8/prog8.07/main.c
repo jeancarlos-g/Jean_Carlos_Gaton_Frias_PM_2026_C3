@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct
+{
+    char mat[20];
+    int pro;
+}matpro;
+
+typedef struct
+{
+    int matri;
+    char nom[20];
+    matpro cal[5];
+}alumno;
+
+void lectura(alumno, int t);
+void f1(alumno *, int tam);
+void f2(alumno *, int tam);
+void f3(alumno *, int tam);
+
+int main()
+{
+    alumno alu[50];
+    int tam;
+    do
+    {
+        printf("\nIngrese el tamaño del arreglo: ");
+        scanf("%d", &tam);
+    }
+    while (tam > 50 || tam < 1);
+
+    lectura(arre, tam);
+    f1(arre, tam);
+    f2(arre, tam);
+    f3(arre, tam);
+
+    return 0;
+}
+
+void lectura(alumno a[], int t)
+{
+    int i, j;
+    for (i=0; i<t; i++)
+    {
+        printf("\nIngrese los datos del alumno %d", i+1);
+        printf("\nIngrese la matricula del alumno: ");
+        scanf("%d", &a[i].matricula);
+        fflush(stdin);
+        printf("\nIngrese el nombre del alumno: ");
+        gets(a[i].nom);
+        for (j=0; j<5; j++)
+        {
+            printf("\tMateria %d", j+1);
+            fflush(stdin);
+            gets(a[i].cal[j].mat);
+            printf("\tPromedio %d: ", j+1);
+            scanf("%d", &a[i].cal[j].pro);
+        }
+    }
+}
+
+void f1(alumno a[], int t)
+{
+    int i, j;
+    float sum;
+    for (i=0; i<t; i++)
+    {
+        printf("\m-nMatricula del alumno: %d", a[i].matri);
+        sum = 0.0;
+        for (j=0; j<5; j++)
+        {
+            sum = sum + a[i].cal[j].pro;
+        }
+        sum = sum / 5;
+        printf("\t\tPromedio: %.2f", pro);
+    }
+}
+
+void f2(alumno a[], int t)
+{
+    int i;
+    printf("\nAlumnos con calificacion en la tercera materia > 9");
+    for (i=0; i<t; i++)
+    {
+        if (a[i].cal[2] > 9)
+        {
+            printf("\nMatricula del alumno: %d", a[i]matri);
+        }
+    }
+}
+
+void f3(alumno a[], int t)
+{
+    int i;
+    float sum = 0.0;
+    for (i=0; i<t; i++)
+    {
+       sum = sum + a[i].cal[3].pro;
+    }
+    pro = sum / t;
+    printf("\n\nPromedio de la materia 4: %.2f", sum);
+}
+
