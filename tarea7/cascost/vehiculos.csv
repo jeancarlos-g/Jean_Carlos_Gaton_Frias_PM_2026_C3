@@ -1,0 +1,2 @@
+nombre;id_combustible;consumo_ciudad_l_100km;consumo_carretera_l_100km;precio_compra;valor_reventa;anios_vida;seguro_anual;matricula_impuestos_anual;limpieza_mensual;imprevistos_anual;mantenimiento_km;neumaticos_km;mantenimiento_pesado_100000km;km_anuales
+toyota corolla 2013;2;10;8;700;500000;1;1000;2.0202e+06;2;23;4;2;4;5
