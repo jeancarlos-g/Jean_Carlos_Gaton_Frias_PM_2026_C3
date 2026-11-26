@@ -1,0 +1,3 @@
+build/
+data/datos.json
+data/*.tmp

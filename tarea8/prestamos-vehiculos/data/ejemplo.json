@@ -1,0 +1,832 @@
+{
+  "version": 1,
+  "next_ids": {
+    "marca": 4,
+    "modelo": 5,
+    "cliente": 4,
+    "prestamo": 4,
+    "abono": 2
+  },
+  "marcas": [
+    {
+      "id": 1,
+      "nombre": "Toyota",
+      "modelos": [
+        {
+          "id": 1,
+          "nombre": "Corolla",
+          "precio": 24500
+        },
+        {
+          "id": 2,
+          "nombre": "Hilux",
+          "precio": 38000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Hyundai",
+      "modelos": [
+        {
+          "id": 3,
+          "nombre": "Tucson",
+          "precio": 31000
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Honda",
+      "modelos": [
+        {
+          "id": 4,
+          "nombre": "Civic",
+          "precio": 27000
+        }
+      ]
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nombre": "Ana Pérez",
+      "cedula": "001-010101-0001A",
+      "telefono": "8888-1111",
+      "email": "ana@example.com"
+    },
+    {
+      "id": 2,
+      "nombre": "Luis Gómez",
+      "cedula": "002-020202-0002B",
+      "telefono": "7777-2222",
+      "email": "luis@example.com"
+    },
+    {
+      "id": 3,
+      "nombre": "María Rodríguez",
+      "cedula": "003-030303-0003C",
+      "telefono": "6666-3333",
+      "email": "maria@example.com"
+    }
+  ],
+  "prestamos": [
+    {
+      "id": 1,
+      "cliente_id": 1,
+      "marca_id": 1,
+      "modelo_id": 1,
+      "vehiculo": "Toyota Corolla",
+      "precio": 24500,
+      "inicial": 4500,
+      "financiado": 20000,
+      "tasa_anual": 12,
+      "plazo": 24,
+      "fecha_inicio": "2026-01-15",
+      "cuotas": [
+        {
+          "numero": 1,
+          "mes": "2026-02",
+          "monto": 941.469444465293,
+          "capital": 741.469444465293,
+          "interes": 200,
+          "pagada": true,
+          "fecha_pago": "2026-02-10"
+        },
+        {
+          "numero": 2,
+          "mes": "2026-03",
+          "monto": 941.469444465293,
+          "capital": 748.884138909946,
+          "interes": 192.585305555347,
+          "pagada": true,
+          "fecha_pago": "2026-02-10"
+        },
+        {
+          "numero": 3,
+          "mes": "2026-04",
+          "monto": 941.469444465293,
+          "capital": 756.372980299045,
+          "interes": 185.096464166248,
+          "pagada": true,
+          "fecha_pago": "2026-02-10"
+        },
+        {
+          "numero": 4,
+          "mes": "2026-05",
+          "monto": 941.469444465293,
+          "capital": 763.936710102036,
+          "interes": 177.532734363257,
+          "pagada": true,
+          "fecha_pago": "2026-02-10"
+        },
+        {
+          "numero": 5,
+          "mes": "2026-06",
+          "monto": 941.469444465293,
+          "capital": 771.576077203056,
+          "interes": 169.893367262237,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 6,
+          "mes": "2026-07",
+          "monto": 941.469444465293,
+          "capital": 779.291837975087,
+          "interes": 162.177606490206,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 7,
+          "mes": "2026-08",
+          "monto": 941.469444465293,
+          "capital": 787.084756354838,
+          "interes": 154.384688110455,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 8,
+          "mes": "2026-09",
+          "monto": 941.469444465293,
+          "capital": 794.955603918386,
+          "interes": 146.513840546907,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 9,
+          "mes": "2026-10",
+          "monto": 941.469444465293,
+          "capital": 802.90515995757,
+          "interes": 138.564284507723,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 10,
+          "mes": "2026-11",
+          "monto": 941.469444465293,
+          "capital": 810.934211557145,
+          "interes": 130.535232908147,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 11,
+          "mes": "2026-12",
+          "monto": 941.469444465293,
+          "capital": 819.043553672717,
+          "interes": 122.425890792576,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 12,
+          "mes": "2027-01",
+          "monto": 941.469444465293,
+          "capital": 827.233989209444,
+          "interes": 114.235455255849,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 13,
+          "mes": "2027-02",
+          "monto": 941.469444465293,
+          "capital": 835.506329101539,
+          "interes": 105.963115363754,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 14,
+          "mes": "2027-03",
+          "monto": 941.469444465293,
+          "capital": 843.861392392554,
+          "interes": 97.608052072739,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 15,
+          "mes": "2027-04",
+          "monto": 941.469444465293,
+          "capital": 852.300006316479,
+          "interes": 89.1694381488134,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 16,
+          "mes": "2027-05",
+          "monto": 941.469444465293,
+          "capital": 860.823006379644,
+          "interes": 80.6464380856487,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 17,
+          "mes": "2027-06",
+          "monto": 941.469444465293,
+          "capital": 869.431236443441,
+          "interes": 72.0382080218522,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 18,
+          "mes": "2027-07",
+          "monto": 941.469444465293,
+          "capital": 878.125548807875,
+          "interes": 63.3438956574178,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 19,
+          "mes": "2027-08",
+          "monto": 941.469444465293,
+          "capital": 886.906804295954,
+          "interes": 54.562640169339,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 20,
+          "mes": "2027-09",
+          "monto": 941.469444465293,
+          "capital": 895.775872338913,
+          "interes": 45.6935721263795,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 21,
+          "mes": "2027-10",
+          "monto": 941.469444465293,
+          "capital": 904.733631062302,
+          "interes": 36.7358134029904,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 22,
+          "mes": "2027-11",
+          "monto": 941.469444465293,
+          "capital": 913.780967372925,
+          "interes": 27.6884770923674,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 23,
+          "mes": "2027-12",
+          "monto": 941.469444465293,
+          "capital": 922.918777046655,
+          "interes": 18.5506674186381,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 24,
+          "mes": "2028-01",
+          "monto": 941.469444465327,
+          "capital": 932.147964817155,
+          "interes": 9.32147964817155,
+          "pagada": false,
+          "fecha_pago": ""
+        }
+      ],
+      "abonos": [
+        {
+          "id": 1,
+          "fecha": "2026-03-05",
+          "monto": 1000,
+          "nota": "Abono a capital"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "cliente_id": 2,
+      "marca_id": 2,
+      "modelo_id": 3,
+      "vehiculo": "Hyundai Tucson",
+      "precio": 31000,
+      "inicial": 8000,
+      "financiado": 23000,
+      "tasa_anual": 10,
+      "plazo": 36,
+      "fecha_inicio": "2026-02-01",
+      "cuotas": [
+        {
+          "numero": 1,
+          "mes": "2026-03",
+          "monto": 742.145305458265,
+          "capital": 550.478638791599,
+          "interes": 191.666666666667,
+          "pagada": true,
+          "fecha_pago": "2026-03-02"
+        },
+        {
+          "numero": 2,
+          "mes": "2026-04",
+          "monto": 742.145305458265,
+          "capital": 555.065960781528,
+          "interes": 187.079344676737,
+          "pagada": true,
+          "fecha_pago": "2026-03-02"
+        },
+        {
+          "numero": 3,
+          "mes": "2026-05",
+          "monto": 742.145305458265,
+          "capital": 559.691510454708,
+          "interes": 182.453795003557,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 4,
+          "mes": "2026-06",
+          "monto": 742.145305458265,
+          "capital": 564.355606375164,
+          "interes": 177.789699083101,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 5,
+          "mes": "2026-07",
+          "monto": 742.145305458265,
+          "capital": 569.058569761624,
+          "interes": 173.086735696642,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 6,
+          "mes": "2026-08",
+          "monto": 742.145305458265,
+          "capital": 573.800724509637,
+          "interes": 168.344580948628,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 7,
+          "mes": "2026-09",
+          "monto": 742.145305458265,
+          "capital": 578.582397213884,
+          "interes": 163.562908244381,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 8,
+          "mes": "2026-10",
+          "monto": 742.145305458265,
+          "capital": 583.403917190666,
+          "interes": 158.741388267599,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 9,
+          "mes": "2026-11",
+          "monto": 742.145305458265,
+          "capital": 588.265616500589,
+          "interes": 153.879688957677,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 10,
+          "mes": "2026-12",
+          "monto": 742.145305458265,
+          "capital": 593.167829971427,
+          "interes": 148.977475486838,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 11,
+          "mes": "2027-01",
+          "monto": 742.145305458265,
+          "capital": 598.110895221189,
+          "interes": 144.034410237076,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 12,
+          "mes": "2027-02",
+          "monto": 742.145305458265,
+          "capital": 603.095152681365,
+          "interes": 139.0501527769,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 13,
+          "mes": "2027-03",
+          "monto": 742.145305458265,
+          "capital": 608.120945620377,
+          "interes": 134.024359837889,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 14,
+          "mes": "2027-04",
+          "monto": 742.145305458265,
+          "capital": 613.188620167213,
+          "interes": 128.956685291052,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 15,
+          "mes": "2027-05",
+          "monto": 742.145305458265,
+          "capital": 618.298525335273,
+          "interes": 123.846780122992,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 16,
+          "mes": "2027-06",
+          "monto": 742.145305458265,
+          "capital": 623.4510130464,
+          "interes": 118.694292411865,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 17,
+          "mes": "2027-07",
+          "monto": 742.145305458265,
+          "capital": 628.64643815512,
+          "interes": 113.498867303145,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 18,
+          "mes": "2027-08",
+          "monto": 742.145305458265,
+          "capital": 633.88515847308,
+          "interes": 108.260146985185,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 19,
+          "mes": "2027-09",
+          "monto": 742.145305458265,
+          "capital": 639.167534793689,
+          "interes": 102.977770664576,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 20,
+          "mes": "2027-10",
+          "monto": 742.145305458265,
+          "capital": 644.49393091697,
+          "interes": 97.6513745412956,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 21,
+          "mes": "2027-11",
+          "monto": 742.145305458265,
+          "capital": 649.864713674611,
+          "interes": 92.2805917836542,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 22,
+          "mes": "2027-12",
+          "monto": 742.145305458265,
+          "capital": 655.280252955233,
+          "interes": 86.8650525030324,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 23,
+          "mes": "2028-01",
+          "monto": 742.145305458265,
+          "capital": 660.74092172986,
+          "interes": 81.4043837284055,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 24,
+          "mes": "2028-02",
+          "monto": 742.145305458265,
+          "capital": 666.247096077608,
+          "interes": 75.8982093806567,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 25,
+          "mes": "2028-03",
+          "monto": 742.145305458265,
+          "capital": 671.799155211589,
+          "interes": 70.3461502466766,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 26,
+          "mes": "2028-04",
+          "monto": 742.145305458265,
+          "capital": 677.397481505019,
+          "interes": 64.7478239532467,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 27,
+          "mes": "2028-05",
+          "monto": 742.145305458265,
+          "capital": 683.04246051756,
+          "interes": 59.1028449407048,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 28,
+          "mes": "2028-06",
+          "monto": 742.145305458265,
+          "capital": 688.734481021873,
+          "interes": 53.4108244363918,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 29,
+          "mes": "2028-07",
+          "monto": 742.145305458265,
+          "capital": 694.473935030389,
+          "interes": 47.6713704278762,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 30,
+          "mes": "2028-08",
+          "monto": 742.145305458265,
+          "capital": 700.261217822309,
+          "interes": 41.8840876359563,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 31,
+          "mes": "2028-09",
+          "monto": 742.145305458265,
+          "capital": 706.096727970828,
+          "interes": 36.0485774874371,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 32,
+          "mes": "2028-10",
+          "monto": 742.145305458265,
+          "capital": 711.980867370585,
+          "interes": 30.1644380876802,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 33,
+          "mes": "2028-11",
+          "monto": 742.145305458265,
+          "capital": 717.91404126534,
+          "interes": 24.2312641929253,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 34,
+          "mes": "2028-12",
+          "monto": 742.145305458265,
+          "capital": 723.896658275884,
+          "interes": 18.2486471823808,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 35,
+          "mes": "2029-01",
+          "monto": 742.145305458265,
+          "capital": 729.929130428183,
+          "interes": 12.2161750300818,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 36,
+          "mes": "2029-02",
+          "monto": 742.145305458143,
+          "capital": 736.01187318163,
+          "interes": 6.13343227651358,
+          "pagada": false,
+          "fecha_pago": ""
+        }
+      ],
+      "abonos": []
+    },
+    {
+      "id": 3,
+      "cliente_id": 3,
+      "marca_id": 3,
+      "modelo_id": 4,
+      "vehiculo": "Honda Civic",
+      "precio": 27000,
+      "inicial": 7000,
+      "financiado": 20000,
+      "tasa_anual": 14,
+      "plazo": 18,
+      "fecha_inicio": "2026-03-10",
+      "cuotas": [
+        {
+          "numero": 1,
+          "mes": "2026-04",
+          "monto": 1238.30348052548,
+          "capital": 1004.97014719215,
+          "interes": 233.333333333333,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 2,
+          "mes": "2026-05",
+          "monto": 1238.30348052548,
+          "capital": 1016.69479890939,
+          "interes": 221.608681616092,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 3,
+          "mes": "2026-06",
+          "monto": 1238.30348052548,
+          "capital": 1028.55623823,
+          "interes": 209.747242295482,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 4,
+          "mes": "2026-07",
+          "monto": 1238.30348052548,
+          "capital": 1040.55606100935,
+          "interes": 197.747419516132,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 5,
+          "mes": "2026-08",
+          "monto": 1238.30348052548,
+          "capital": 1052.69588172112,
+          "interes": 185.607598804356,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 6,
+          "mes": "2026-09",
+          "monto": 1238.30348052548,
+          "capital": 1064.97733367454,
+          "interes": 173.326146850943,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 7,
+          "mes": "2026-10",
+          "monto": 1238.30348052548,
+          "capital": 1077.40206923407,
+          "interes": 160.901411291407,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 8,
+          "mes": "2026-11",
+          "monto": 1238.30348052548,
+          "capital": 1089.9717600418,
+          "interes": 148.331720483676,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 9,
+          "mes": "2026-12",
+          "monto": 1238.30348052548,
+          "capital": 1102.68809724229,
+          "interes": 135.615383283188,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 10,
+          "mes": "2027-01",
+          "monto": 1238.30348052548,
+          "capital": 1115.55279171012,
+          "interes": 122.750688815362,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 11,
+          "mes": "2027-02",
+          "monto": 1238.30348052548,
+          "capital": 1128.56757428007,
+          "interes": 109.73590624541,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 12,
+          "mes": "2027-03",
+          "monto": 1238.30348052548,
+          "capital": 1141.73419598,
+          "interes": 96.5692845454762,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 13,
+          "mes": "2027-04",
+          "monto": 1238.30348052548,
+          "capital": 1155.05442826644,
+          "interes": 83.2490522590428,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 14,
+          "mes": "2027-05",
+          "monto": 1238.30348052548,
+          "capital": 1168.53006326288,
+          "interes": 69.773417262601,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 15,
+          "mes": "2027-06",
+          "monto": 1238.30348052548,
+          "capital": 1182.16291400095,
+          "interes": 56.1405665245341,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 16,
+          "mes": "2027-07",
+          "monto": 1238.30348052548,
+          "capital": 1195.95481466429,
+          "interes": 42.3486658611898,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 17,
+          "mes": "2027-08",
+          "monto": 1238.30348052548,
+          "capital": 1209.90762083537,
+          "interes": 28.3958596901064,
+          "pagada": false,
+          "fecha_pago": ""
+        },
+        {
+          "numero": 18,
+          "mes": "2027-09",
+          "monto": 1238.30348052553,
+          "capital": 1224.02320974517,
+          "interes": 14.2802707803603,
+          "pagada": false,
+          "fecha_pago": ""
+        }
+      ],
+      "abonos": []
+    }
+  ]
+}
